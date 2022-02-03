@@ -5,11 +5,20 @@ export const Nav = styled.nav`
     width: 100vw;
     height: 8rem;
     border-bottom: 0.05rem solid #bfc1c2;
+
+    @media screen and (max-width: 500px){
+        height: 5rem;
+    }
 `
 
 export const Nav_list = styled.ul`
     margin-top: 0;
     text-align:right;
+
+    @media screen and (max-width: 500px){
+        text-align: justify;
+        margin: 0 auto;
+    }
 `
 
 export const List_item = styled.li`
@@ -20,14 +29,14 @@ export const List_item = styled.li`
     cursor: pointer;
 
     @media screen and (max-width: 500px){
-        font-size: 12px;
+        font-size: 8px;
         padding: 0.5rem;
     }
 `
 
 export const Avatar = styled.div`
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
 `
 export const Img = styled.img`
     width: 3rem;
