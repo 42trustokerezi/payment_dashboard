@@ -9,6 +9,10 @@ export const Mop = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 0 3rem;
+
+    @media screen and (max-width: 500px){
+        margin: 0 0.5rem;
+    }
 `;
 
 export const Title = styled.div`
@@ -16,12 +20,19 @@ export const Title = styled.div`
 
 export const Text = styled.h2`
     margin-bottom: 0;
+    @media screen and (max-width: 500px){
+        font-size: 16px;
+    }
 `;
 
 export const SubText = styled.p`
     margin-top: 0.5rem;
     font-size: 14px;
     color: #bfc1c2;
+
+    @media screen and (max-width: 500px){
+        font-size: 8px;
+    }
 `;
 
 export const PaymentPortals = styled.ul`
@@ -33,20 +44,37 @@ export const CardDetails = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 0 3rem;
+
+    @media screen and (max-width: 500px){
+        flex-direction: column;
+    }
 `;
 
 export const Card = styled.div`
     padding: 0;
     width: 25rem;
     height: 16rem;
+
+    @media screen and (max-width: 500px){
+        width: 20rem;
+        height: 14rem;
+    }
 `;
 
 export const List_item = styled.li`
     display: inline-block;
     padding: 0 1rem;
+
+    @media screen and (max-width: 500px){
+        padding: 0 0.3rem;
+    }
 `;
 export const Img = styled.img`
     max-width: 2rem;
+
+    @media screen and (max-width: 500px){
+        max-width: 1.5rem;
+    }
 `;
 
 export const Image = styled.img`
@@ -54,6 +82,10 @@ export const Image = styled.img`
     width: 100%;
     height: 100%;
     display: block;
+
+    @media screen and (max-width: 500px){
+        
+    }
 `
 export const Form = styled.form`
     margin-top: 0;
@@ -62,6 +94,11 @@ export const Form = styled.form`
     grid-gap: 20px;
     padding-bottom: 1rem;
     width: 30rem;
+
+    @media screen and (max-width: 500px){
+        margin-top: 1rem;
+        width: 20rem;
+    }
 `
 
 export const FormGroup = styled.div`
@@ -74,7 +111,14 @@ export const FormGroup = styled.div`
         margin-bottom: 5px;
         color: #888;
         font-size: 14px;
+
+        @media screen and (max-width: 500px){
+        margin-left: 1rem;
     }
+
+    }
+
+    
 `
 
 export const FormInput = styled.input`
@@ -91,6 +135,11 @@ export const FormInput = styled.input`
             background-color: #acacac;
             color: white;
         }
+
+     @media screen and (max-width: 500px){
+        width: 60%;
+        margin: 0 auto;
+    }
 `
 export const Label = styled.label``
 
@@ -142,17 +191,36 @@ export const PromoCode = styled.div`
     margin: 0 3rem;
 `
 
-export const SubTText = styled.h4``
-export const EstText = styled.h4``
+export const SubTText = styled.h4`
+    @media screen and (max-width: 500px){
+        font-size: 14px;
+    }
+`
+export const EstText = styled.h4`
+    @media screen and (max-width: 500px){
+        font-size: 14px;
+    }
+`
 export const PromoText = styled.h4`
     display: inline-flex;
     align-items: center;
     margin: 0;
+
+    @media screen and (max-width: 500px){
+        font-size: 14px;
+    }
 `
 export const Code = styled.h4`
     color: #e5e4e2;
+    @media screen and (max-width: 500px){
+        font-size: 14px;
+    }
 `
-export const Value = styled.h4``
+export const Value = styled.h4`
+    @media screen and (max-width: 500px){
+        font-size: 14px;
+    }
+`
 
 export const Payment = styled.div`
     display: flex;
@@ -170,9 +238,24 @@ export const Pay = styled.button`
     font-size: 16px ;
     font-weight: 500;
     border-radius: 0.2rem;
+
+    @media screen and (max-width: 500px){
+        width: 8rem;
+        height: 3rem;
+
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0 0.5rem;
+    }
 `
 
 export const Total = styled.div`
     display: flex;
+    margin: 0 0.5rem;
 `
-export const TText = styled.h4``
+export const TText = styled.h4`
+    @media screen and (max-width: 500px){
+        font-size: 14px;
+        font-weight: 600;
+    }
+`

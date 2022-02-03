@@ -18,6 +18,11 @@ export const List_item = styled.li`
     text-align: center;
     font-weight: 600;
     cursor: pointer;
+
+    @media screen and (max-width: 500px){
+        font-size: 12px;
+        padding: 0.5rem;
+    }
 `
 
 export const Avatar = styled.div`
